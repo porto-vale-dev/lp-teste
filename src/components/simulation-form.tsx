@@ -162,11 +162,11 @@ export default function SimulationForm() {
             <div className="grid grid-cols-2 gap-4 my-6 text-foreground">
               <div className="flex flex-col items-center">
                 <span className="text-sm text-muted-foreground">Crédito:</span>
-                <span className="text-2xl font-bold">{formatCurrency(creditValue)}</span>
+                <span className="text-xl md:text-2xl font-bold">{formatCurrency(creditValue)}</span>
               </div>
               <div className="flex flex-col items-center border-l">
                 <span className="text-sm text-muted-foreground">Parcela:</span>
-                <span className="text-2xl font-bold">{formatCurrency(installmentValue)}</span>
+                <span className="text-xl md:text-2xl font-bold">{formatCurrency(installmentValue)}</span>
               </div>
             </div>
 
