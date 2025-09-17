@@ -3,13 +3,32 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
 
 const socialLinks = [
-  { href: 'https://www.facebook.com/portovaleconsorcios', icon: Facebook, name: 'Facebook' },
-  { href: 'https://www.instagram.com/portovaleconsorcio/', icon: Instagram, name: 'Instagram' },
-  { href: 'https://www.youtube.com/channel/UCA_32445-gHoQEaN_dljMyA', icon: Youtube, name: 'YouTube' },
-  { href: 'https://www.linkedin.com/company/portovaleconsorcio/posts/?feedView=all', icon: Linkedin, name: 'LinkedIn' },
+  {
+    name: 'Facebook',
+    href: 'https://www.facebook.com/portovaleconsorcios',
+    imageId: 'social-facebook',
+    imageHint: 'facebook logo',
+  },
+  {
+    name: 'Instagram',
+    href: 'https://www.instagram.com/portovaleconsorcio/',
+    imageId: 'social-instagram',
+    imageHint: 'instagram logo',
+  },
+  {
+    name: 'YouTube',
+    href: 'https://www.youtube.com/channel/UCA_32445-gHoQEaN_dljMyA',
+    imageId: 'social-youtube',
+    imageHint: 'youtube logo',
+  },
+  {
+    name: 'LinkedIn',
+    href: 'https://www.linkedin.com/company/portovaleconsorcio/posts/?feedView=all',
+    imageId: 'social-linkedin',
+    imageHint: 'linkedin logo',
+  },
 ];
 
 export default function Footer() {
@@ -58,12 +77,24 @@ export default function Footer() {
         <div className="flex flex-col items-center gap-2.5">
           <h3 className="text-lg font-semibold">Acompanhe nossas redes sociais</h3>
           <div className="flex space-x-6">
-            {socialLinks.map((social) => (
-              <Link key={social.name} href={social.href} target="_blank" rel="noopener noreferrer" className="text-white hover:text-white/80 transition-transform hover:scale-110">
-                <social.icon className="h-8 w-8" />
-                <span className="sr-only">{social.name}</span>
-              </Link>
-            ))}
+            {socialLinks.map((social) => {
+              const image = PlaceHolderImages.find((img) => img.id === social.imageId);
+              return (
+                <Link key={social.name} href={social.href} target="_blank" rel="noopener noreferrer" className="text-white hover:text-white/80 transition-transform hover:scale-110">
+                  {image && (
+                    <Image 
+                      src={image.imageUrl} 
+                      alt={image.description}
+                      width={32} 
+                      height={32} 
+                      className="h-8 w-8"
+                      data-ai-hint={social.imageHint}
+                    />
+                  )}
+                  <span className="sr-only">{social.name}</span>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </div>

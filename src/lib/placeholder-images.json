@@ -131,6 +131,30 @@
       "description": "Selo da ABAC - Associação Brasileira de Administradoras de Consórcios",
       "imageUrl": "https://storage.googleapis.com/consorcioportovale/imagensSitePV/selo-abac%201.png",
       "imageHint": "association seal"
+    },
+    {
+      "id": "social-facebook",
+      "description": "Ícone da rede social Facebook",
+      "imageUrl": "https://storage.googleapis.com/consorcioportovale/imagens-lps-acelera/icone-faceboook.svg",
+      "imageHint": "facebook logo"
+    },
+    {
+      "id": "social-instagram",
+      "description": "Ícone da rede social Instagram",
+      "imageUrl": "https://storage.googleapis.com/consorcioportovale/imagens-lps-acelera/iconse-instagram.png",
+      "imageHint": "instagram logo"
+    },
+    {
+      "id": "social-youtube",
+      "description": "Ícone da rede social Youtube",
+      "imageUrl": "https://storage.googleapis.com/consorcioportovale/imagens-lps-acelera/icone-youtube.png",
+      "imageHint": "youtube logo"
+    },
+    {
+      "id": "social-linkedin",
+      "description": "Ícone da rede social Linkedin",
+      "imageUrl": "https://storage.googleapis.com/consorcioportovale/imagens-lps-acelera/icone-linkedin-branco.png",
+      "imageHint": "linkedin logo"
     }
   ]
 }
