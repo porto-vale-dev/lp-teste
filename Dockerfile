@@ -1,3 +1,4 @@
+
 # 1. Instalação
 FROM node:20-alpine AS deps
 WORKDIR /app
