@@ -69,7 +69,7 @@ export default function ReviewsSection() {
           )}
         </div>
 
-        <div className="w-full flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
+        <div className="w-full flex flex-col md:flex-row items-center md:justify-start gap-8 md:gap-16">
           <div className="flex items-center gap-5 md:gap-8">
             <div className="text-center md:text-left">
               <p className="text-8xl font-medium leading-none text-gray-700">4,9</p>
@@ -105,7 +105,7 @@ export default function ReviewsSection() {
         <Button
           onClick={scrollToForm}
           size="lg"
-          className="mt-16 bg-primary text-primary-foreground hover:bg-primary/90 w-full sm:w-auto uppercase font-bold rounded-full max-w-md"
+          className="mt-16 bg-primary text-primary-foreground hover:bg-primary/90 w-full md:w-auto md:max-w-md uppercase font-bold rounded-full"
         >
           Fazer uma simulação!
         </Button>
