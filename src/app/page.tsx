@@ -8,6 +8,7 @@ import BlogSection from '@/components/sections/blog-section';
 import FeedbacksSection from '@/components/sections/feedbacks-section';
 import PortoValeSection from '@/components/sections/porto-vale-section';
 import ReviewsSection from '@/components/sections/reviews-section';
+import FaqSection from '@/components/sections/faq-section';
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <FeedbacksSection />
         <PortoValeSection />
         <ReviewsSection />
+        <FaqSection />
         <DreamsSection />
         <TestimonialsSection />
         <BlogSection />
