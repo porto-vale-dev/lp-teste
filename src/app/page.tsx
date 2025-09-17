@@ -6,6 +6,7 @@ import DreamsSection from '@/components/sections/dreams-section';
 import TestimonialsSection from '@/components/sections/testimonials-section';
 import BlogSection from '@/components/sections/blog-section';
 import FeedbacksSection from '@/components/sections/feedbacks-section';
+import PortoValeSection from '@/components/sections/porto-vale-section';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <TableSection />
         <WhyChooseUsSection />
         <FeedbacksSection />
+        <PortoValeSection />
         <DreamsSection />
         <TestimonialsSection />
         <BlogSection />

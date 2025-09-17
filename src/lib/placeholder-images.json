@@ -3,7 +3,7 @@
     {
       "id": "logo",
       "description": "PortoVale logo",
-      "imageUrl": "https://picsum.photos/seed/logo/200/50",
+      "imageUrl": "https://storage.googleapis.com/consorcioportovale/imagens/Logo_PortoSeguro_Novo-1900px.webp",
       "imageHint": "logo brand"
     },
     {
@@ -167,6 +167,12 @@
       "description": "Thumbnail for third secondary feedback video",
       "imageUrl": "https://storage.googleapis.com/consorcioportovale/imagens-turbinada/Thumb_Antonieta_1900px.webp",
       "imageHint": "smiling woman"
+    },
+    {
+      "id": "porto-vale-facade",
+      "description": "Fachada da Porto Vale",
+      "imageUrl": "https://storage.googleapis.com/consorcioportovale/imagensSitePV/Mask%20group.png",
+      "imageHint": "office building"
     }
   ]
 }
