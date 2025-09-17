@@ -5,6 +5,7 @@ import WhyChooseUsSection from '@/components/sections/why-choose-us-section';
 import DreamsSection from '@/components/sections/dreams-section';
 import TestimonialsSection from '@/components/sections/testimonials-section';
 import BlogSection from '@/components/sections/blog-section';
+import FeedbacksSection from '@/components/sections/feedbacks-section';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <HeroSection />
         <TableSection />
         <WhyChooseUsSection />
+        <FeedbacksSection />
         <DreamsSection />
         <TestimonialsSection />
         <BlogSection />

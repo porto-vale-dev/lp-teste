@@ -143,6 +143,30 @@
       "description": "Ícone de personalizado",
       "imageUrl": "https://storage.googleapis.com/consorcioportovale/imagens/Icone_Sedan_1900px.webp",
       "imageHint": "custom icon"
+    },
+    {
+      "id": "feedback-thumb-main",
+      "description": "Thumbnail for main feedback video",
+      "imageUrl": "https://storage.googleapis.com/consorcioportovale/imagens-turbinada/Thum_Ignacio_1900px.webp",
+      "imageHint": "man smiling"
+    },
+    {
+      "id": "feedback-thumb-secondary1",
+      "description": "Thumbnail for first secondary feedback video",
+      "imageUrl": "https://storage.googleapis.com/consorcioportovale/imagens-turbinada/Thumb_Roberto_1900px.webp",
+      "imageHint": "man in office"
+    },
+    {
+      "id": "feedback-thumb-secondary2",
+      "description": "Thumbnail for second secondary feedback video",
+      "imageUrl": "https://storage.googleapis.com/consorcioportovale/imagens-turbinada/Thumb_Brenno_1900px.webp",
+      "imageHint": "young man"
+    },
+    {
+      "id": "feedback-thumb-secondary3",
+      "description": "Thumbnail for third secondary feedback video",
+      "imageUrl": "https://storage.googleapis.com/consorcioportovale/imagens-turbinada/Thumb_Antonieta_1900px.webp",
+      "imageHint": "smiling woman"
     }
   ]
 }
