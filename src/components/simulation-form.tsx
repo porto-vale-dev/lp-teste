@@ -149,7 +149,7 @@ export default function SimulationForm() {
   };
 
   return (
-    <Card className="w-full max-w-md shadow-lg rounded-2xl">
+    <Card id="simulation-form" className="w-full max-w-md shadow-lg rounded-2xl">
       <CardContent className="p-6 text-center">
         {step === 1 && (
           <div>

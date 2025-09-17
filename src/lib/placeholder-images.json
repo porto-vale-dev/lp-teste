@@ -107,6 +107,18 @@
       "description": "Abstract background for the footer call to action",
       "imageUrl": "https://picsum.photos/seed/footerbg/1920/500",
       "imageHint": "abstract texture"
+    },
+    {
+      "id": "table-mobile",
+      "description": "Tabela de valores do consórcio imobiliário Porto para mobile",
+      "imageUrl": "https://storage.googleapis.com/consorcioportovale/imagens/Tabela_valores_flex_400px.webp",
+      "imageHint": "price table"
+    },
+    {
+      "id": "table-desktop",
+      "description": "Tabela de valores do consórcio imobiliário Porto para desktop",
+      "imageUrl": "https://storage.googleapis.com/consorcioportovale/imagens/Tabela_Valores_Flex_1900px.webp",
+      "imageHint": "price table"
     }
   ]
 }
