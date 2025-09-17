@@ -56,7 +56,7 @@ export default function FeedbacksSection() {
   const MainVideo = ({ id, imageId, videoId, imageHint }: { id: VideoId, imageId: string, videoId: string, imageHint: string }) => {
     const image = PlaceHolderImages.find((img) => img.id === imageId);
     return (
-      <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-lg cursor-pointer mb-8">
+      <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-lg cursor-pointer mb-6">
         {activeVideo === id ? (
           <iframe
             src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
@@ -113,7 +113,7 @@ export default function FeedbacksSection() {
             />
           </div>
         </div>
-        <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div className="mt-2 grid grid-cols-1 sm:grid-cols-3 gap-x-6">
           {videoData.secondary.map((video) => (
             <MainVideo
               key={video.id}
