@@ -9,13 +9,13 @@
     {
       "id": "logo-porto",
       "description": "Porto logo",
-      "imageUrl": "https://picsum.photos/seed/portologo/200/50",
+      "imageUrl": "https://storage.googleapis.com/consorcioportovale/imagens/Logo_PortoSeguro_Novo-1900px.webp",
       "imageHint": "insurance logo"
     },
     {
       "id": "hero-1",
       "description": "Family smiling in front of a new house",
-      "imageUrl": "https://picsum.photos/seed/hero1/1920/800",
+      "imageUrl": "https://storage.googleapis.com/consorcioportovale/imagens/Imagem_imovel_1900px.webp",
       "imageHint": "modern house"
     },
     {
