@@ -12,46 +12,45 @@ export default function HeroSection() {
     <section className="bg-primary w-full relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-between min-h-screen pt-24 lg:pt-0">
         
-        {/* Content */}
-        <div className="text-white text-center lg:text-left lg:w-[36%] z-10">
-          {logoPorto && (
-            <Image
-              src={logoPorto.imageUrl}
-              alt={logoPorto.description}
-              width={200}
-              height={50}
-              data-ai-hint={logoPorto.imageHint}
-              className="h-auto mx-auto lg:mx-0 mb-6"
-            />
-          )}
-          <h1 className="text-3xl md:text-5xl font-bold font-headline leading-tight">
-            A melhor forma de comprar o seu Imóvel é com o Consórcio!
-          </h1>
-        </div>
-
-        {/* Image - now absolute for overlap */}
-        <div className="w-full max-w-[80%] md:max-w-[55%] mx-auto mt-8 lg:absolute lg:left-1/2 lg:-translate-x-1/2 lg:w-[50%] lg:max-w-none lg:mt-0">
-           {heroImage && (
-              <div className="relative w-full aspect-[4/3]">
-                  <Image
-                      src={heroImage.imageUrl}
-                      alt={heroImage.description}
-                      fill
-                      className="object-contain"
-                      data-ai-hint={heroImage.imageHint}
-                      style={{
-                        clipPath: 'polygon(0% 0%, 100% 0%, 100% 75%, 50% 100%, 0% 75%)'
-                      }}
-                  />
-              </div>
+        <div className="flex flex-col lg:flex-row items-center justify-between w-full lg:gap-8">
+            {/* Content */}
+            <div className="text-white text-center lg:text-left lg:w-1/3 z-10 order-1 lg:order-1">
+            {logoPorto && (
+                <Image
+                src={logoPorto.imageUrl}
+                alt={logoPorto.description}
+                width={200}
+                height={50}
+                data-ai-hint={logoPorto.imageHint}
+                className="h-auto mx-auto lg:mx-0 mb-6"
+                />
             )}
-         </div>
+            <h1 className="text-3xl md:text-5xl font-bold font-headline leading-tight">
+                A melhor forma de comprar o seu Imóvel é com o Consórcio!
+            </h1>
+            </div>
 
-        {/* Form */}
-        <div className="w-full lg:w-1/2 flex justify-center lg:justify-end items-center mt-10 lg:mt-0 z-10">
-           <div className="w-full max-w-md">
-            <SimulationForm />
-           </div>
+            {/* Image */}
+            <div className="capa-carrossel w-full max-w-[80%] md:max-w-[55%] mx-auto mt-8 lg:mt-0 lg:w-1/3 order-2 lg:order-2">
+            {heroImage && (
+                <div className="relative w-full aspect-[4/3]">
+                    <Image
+                        src={heroImage.imageUrl}
+                        alt={heroImage.description}
+                        fill
+                        className="object-contain"
+                        data-ai-hint={heroImage.imageHint}
+                    />
+                </div>
+                )}
+            </div>
+
+            {/* Form */}
+            <div className="w-full lg:w-1/3 flex justify-center lg:justify-end items-center mt-10 lg:mt-0 z-10 order-3 lg:order-3">
+            <div className="w-full max-w-md">
+                <SimulationForm />
+            </div>
+            </div>
         </div>
       </div>
     </section>
