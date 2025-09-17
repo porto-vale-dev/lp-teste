@@ -173,6 +173,30 @@
       "description": "Fachada da Porto Vale",
       "imageUrl": "https://storage.googleapis.com/consorcioportovale/imagensSitePV/Mask%20group.png",
       "imageHint": "office building"
+    },
+    {
+      "id": "google-logo",
+      "description": "Logo Google Meu Negócio",
+      "imageUrl": "https://storage.googleapis.com/consorcioportovale/imagens-lps-acelera/Google-logo.png",
+      "imageHint": "google logo"
+    },
+    {
+      "id": "star-icon",
+      "description": "Estrela de avaliação",
+      "imageUrl": "https://storage.googleapis.com/consorcioportovale/imagens-lps-acelera/estrela.png",
+      "imageHint": "rating star"
+    },
+    {
+      "id": "review-image-1",
+      "description": "Depoimento de cliente 1",
+      "imageUrl": "https://storage.googleapis.com/consorcioportovale/imagensSitePV/depoimento4.jpeg",
+      "imageHint": "client review"
+    },
+    {
+      "id": "review-image-2",
+      "description": "Depoimento de cliente 2",
+      "imageUrl": "https://storage.googleapis.com/consorcioportovale/imagensSitePV/depoimento2.jpeg",
+      "imageHint": "customer testimonial"
     }
   ]
 }
