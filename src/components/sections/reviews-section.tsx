@@ -28,6 +28,22 @@ export default function ReviewsSection() {
     <section className="my-8 md:my-12 py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center text-[#685a5d]">
         
+        {googleLogo && (
+            <div className="mb-8">
+                <Image
+                src={googleLogo.imageUrl}
+                alt={googleLogo.description}
+                width={200}
+                height={70}
+                className="h-auto mx-auto"
+                data-ai-hint={googleLogo.imageHint}
+                />
+                <p className="mt-4 text-lg md:text-xl font-semibold text-gray-600">
+                Avaliações da Porto Vale no Google
+                </p>
+            </div>
+        )}
+        
         <div className="w-full grid md:grid-cols-2 gap-8 mb-16">
           {reviewImage1 && (
             <Image
