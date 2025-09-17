@@ -77,7 +77,6 @@ export default function FeedbacksSection() {
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-                 <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="white" className="opacity-80 hover:opacity-100 transition-opacity"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
               </div>
             </div>
           )
@@ -100,7 +99,7 @@ export default function FeedbacksSection() {
             <Button
               onClick={scrollToForm}
               size="lg"
-              className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90 hidden md:inline-flex w-full sm:w-auto"
+              className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90 hidden md:inline-flex w-full sm:w-auto rounded-full"
             >
               Fazer uma simulação!
             </Button>
@@ -129,7 +128,7 @@ export default function FeedbacksSection() {
            <Button
               onClick={scrollToForm}
               size="lg"
-              className="bg-accent text-accent-foreground hover:bg-accent/90 w-full"
+              className="bg-accent text-accent-foreground hover:bg-accent/90 w-full rounded-full"
             >
               Fazer uma simulação!
             </Button>
