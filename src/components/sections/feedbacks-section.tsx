@@ -44,9 +44,11 @@ export default function FeedbacksSection() {
   };
 
   const scrollToForm = () => {
-    const formElement = document.getElementById('simulation-form');
-    if (formElement) {
-      formElement.scrollIntoView({ behavior: 'smooth' });
+    if (typeof window !== 'undefined' && typeof document !== 'undefined') {
+      const formElement = document.getElementById('simulation-form');
+      if (formElement) {
+        formElement.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   };
 
