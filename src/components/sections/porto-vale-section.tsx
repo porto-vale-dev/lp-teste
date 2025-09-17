@@ -32,7 +32,7 @@ export default function PortoValeSection() {
               realidade.
             </p>
             <div className="mt-4 flex justify-center md:justify-start">
-                <Button onClick={scrollToForm} size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 w-full sm:w-auto">
+                <Button onClick={scrollToForm} size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 w-full sm:w-auto font-bold uppercase">
                     Faça uma simulação com a Porto Vale
                     <ChevronRight className="h-5 w-5" />
                 </Button>

@@ -105,7 +105,7 @@ export default function ReviewsSection() {
         <Button
           onClick={scrollToForm}
           size="lg"
-          className="mt-16 bg-primary text-primary-foreground hover:bg-primary/90 w-full max-w-md uppercase font-bold"
+          className="mt-16 bg-primary text-primary-foreground hover:bg-primary/90 w-full sm:w-auto uppercase font-bold"
         >
           Fazer uma simulação!
         </Button>

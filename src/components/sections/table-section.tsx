@@ -54,7 +54,7 @@ export default function TableSection() {
         <Button
           onClick={scrollToForm}
           size="lg"
-          className="mt-8 bg-primary text-primary-foreground hover:bg-primary/90 hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 w-full md:w-auto md:max-w-md uppercase font-bold"
+          className="mt-8 bg-primary text-primary-foreground hover:bg-primary/90 hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 w-full sm:w-auto uppercase font-bold"
         >
           Fazer uma simulação!
         </Button>

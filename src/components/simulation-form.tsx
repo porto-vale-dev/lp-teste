@@ -162,11 +162,11 @@ export default function SimulationForm() {
             <div className="grid grid-cols-2 gap-4 my-6 text-foreground">
               <div className="flex flex-col items-center">
                 <span className="text-sm text-muted-foreground">Crédito:</span>
-                <span className="text-xl md:text-2xl font-bold">{formatCurrency(creditValue)}</span>
+                <span className="text-lg md:text-2xl font-bold">{formatCurrency(creditValue)}</span>
               </div>
               <div className="flex flex-col items-center border-l">
                 <span className="text-sm text-muted-foreground">Parcela:</span>
-                <span className="text-xl md:text-2xl font-bold">{formatCurrency(installmentValue)}</span>
+                <span className="text-lg md:text-2xl font-bold">{formatCurrency(installmentValue)}</span>
               </div>
             </div>
 
@@ -182,7 +182,7 @@ export default function SimulationForm() {
               <span>{formatCurrency(CREDITO_MAX)}</span>
             </div>
 
-            <Button onClick={handleNextStep} size="lg" className="w-full mt-6 bg-accent text-accent-foreground hover:bg-accent/90">
+            <Button onClick={handleNextStep} size="lg" className="w-full mt-6 bg-accent text-accent-foreground hover:bg-accent/90 font-bold uppercase">
               Simular agora
             </Button>
           </div>
@@ -242,7 +242,7 @@ export default function SimulationForm() {
                 <Button type="button" variant="outline" onClick={handlePrevStep} className="w-full" disabled={isLoading}>
                   Voltar
                 </Button>
-                <Button type="submit" className="w-full bg-accent text-accent-foreground hover:bg-accent/90" disabled={isLoading}>
+                <Button type="submit" className="w-full bg-accent text-accent-foreground hover:bg-accent/90 font-bold uppercase" disabled={isLoading}>
                   {isLoading ? <Loader2 className="animate-spin" /> : 'Tenho Interesse!'}
                 </Button>
               </div>

@@ -9,21 +9,25 @@ const features = [
     imageId: 'advantage-no-interest',
     title: 'Sem juros e sem entrada',
     description: 'O consórcio não exige que os indivíduos tenham um alto valor inicial para investir e não cobram taxas de juros.',
+    imageHint: 'no interest icon'
   },
   {
     imageId: 'advantage-flexibility',
     title: 'Flexibilidade para usar o crédito',
     description: 'Com o consórcio você pode usar seu crédito para comprar um bem a vista, o que te permite mais opções no momento da compra.',
+    imageHint: 'flexibility icon'
   },
   {
     imageId: 'advantage-less-bureaucracy',
     title: 'Menos burocracia',
     description: 'No consórcio são necessários apenas alguns documentos básicos, diferente do financiamento.',
+    imageHint: 'contract icon'
   },
   {
     imageId: 'advantage-custom',
     title: 'Personalizado',
     description: 'Os consórcios oferecem opções para diversos tipos de investimento.',
+    imageHint: 'custom icon'
   },
 ];
 
@@ -70,7 +74,7 @@ export default function WhyChooseUsSection() {
           })}
         </div>
         <div className="mt-12 text-center">
-          <Button onClick={scrollToForm} size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
+          <Button onClick={scrollToForm} size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 w-full sm:w-auto font-bold uppercase">
             Fazer uma simulação!
           </Button>
         </div>
