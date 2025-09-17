@@ -9,7 +9,7 @@ export default function HeroSection() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-1');
 
   return (
-    <section className="bg-primary w-full -mt-20">
+    <section className="bg-primary w-full">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-between min-h-screen pt-24 lg:pt-0">
         
         {/* Content */}
@@ -27,7 +27,7 @@ export default function HeroSection() {
           <h1 className="text-3xl md:text-5xl font-bold font-headline leading-tight">
             A melhor forma de comprar o seu Imóvel é com o Consórcio!
           </h1>
-          {heroImage && (
+           {heroImage && (
             <div className="relative w-full aspect-[4/3] mt-8 lg:hidden rounded-lg overflow-hidden shadow-lg">
                 <Image
                     src={heroImage.imageUrl}
@@ -41,8 +41,23 @@ export default function HeroSection() {
         </div>
 
         {/* Form */}
-        <div className="w-full lg:w-1/2 flex justify-center mt-10 lg:mt-0">
-           <SimulationForm />
+        <div className="w-full lg:w-1/2 flex justify-center items-center mt-10 lg:mt-0">
+           <div className="hidden lg:block lg:w-1/2 lg:pl-12">
+             {heroImage && (
+                <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden shadow-lg">
+                    <Image
+                        src={heroImage.imageUrl}
+                        alt={heroImage.description}
+                        fill
+                        className="object-cover"
+                        data-ai-hint={heroImage.imageHint}
+                    />
+                </div>
+              )}
+           </div>
+           <div className="w-full lg:w-1/2">
+            <SimulationForm />
+           </div>
         </div>
       </div>
     </section>
