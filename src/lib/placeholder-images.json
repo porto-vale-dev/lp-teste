@@ -119,6 +119,30 @@
       "description": "Tabela de valores do consórcio imobiliário Porto para desktop",
       "imageUrl": "https://storage.googleapis.com/consorcioportovale/imagens/Tabela_Valores_Flex_1900px.webp",
       "imageHint": "price table"
+    },
+    {
+      "id": "advantage-no-interest",
+      "description": "Ícone de sem juros",
+      "imageUrl": "https://storage.googleapis.com/consorcioportovale/imagens/Icone_Juros_1900px.webp",
+      "imageHint": "no interest icon"
+    },
+    {
+      "id": "advantage-flexibility",
+      "description": "Ícone de flexibilidade",
+      "imageUrl": "https://storage.googleapis.com/consorcioportovale/imagens/Icone_money_1900px.webp",
+      "imageHint": "flexibility icon"
+    },
+    {
+      "id": "advantage-less-bureaucracy",
+      "description": "Ícone de menos burocracia",
+      "imageUrl": "https://storage.googleapis.com/consorcioportovale/imagens/Icone_contrato_1900px.webp",
+      "imageHint": "contract icon"
+    },
+    {
+      "id": "advantage-custom",
+      "description": "Ícone de personalizado",
+      "imageUrl": "https://storage.googleapis.com/consorcioportovale/imagens/Icone_Sedan_1900px.webp",
+      "imageHint": "custom icon"
     }
   ]
 }

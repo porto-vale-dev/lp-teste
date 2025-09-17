@@ -1,60 +1,77 @@
+'use client';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Handshake, PiggyBank, KeyRound, Award } from 'lucide-react';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
+import Image from 'next/image';
 
 const features = [
   {
-    icon: Handshake,
-    title: 'Sem Juros',
-    description: 'Diferente do financiamento, no consórcio você não paga juros.',
+    imageId: 'advantage-no-interest',
+    title: 'Sem juros e sem entrada',
+    description: 'O consórcio não exige que os indivíduos tenham um alto valor inicial para investir e não cobram taxas de juros.',
   },
   {
-    icon: PiggyBank,
-    title: 'Poder de Compra',
-    description: 'Com a carta de crédito, você tem o poder de compra à vista.',
+    imageId: 'advantage-flexibility',
+    title: 'Flexibilidade para usar o crédito',
+    description: 'Com o consórcio você pode usar seu crédito para comprar um bem a vista, o que te permite mais opções no momento da compra.',
   },
   {
-    icon: KeyRound,
-    title: 'Flexibilidade',
-    description: 'Use seu crédito para comprar imóveis, veículos e muito mais.',
+    imageId: 'advantage-less-bureaucracy',
+    title: 'Menos burocracia',
+    description: 'No consórcio são necessários apenas alguns documentos básicos, diferente do financiamento.',
   },
   {
-    icon: Award,
-    title: 'Segurança',
-    description: 'Um sistema regulamentado pelo Banco Central do Brasil.',
+    imageId: 'advantage-custom',
+    title: 'Personalizado',
+    description: 'Os consórcios oferecem opções para diversos tipos de investimento.',
   },
 ];
 
 export default function WhyChooseUsSection() {
+  const scrollToForm = () => {
+    const formElement = document.getElementById('simulation-form');
+    if (formElement) {
+      formElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <section className="py-16 md:py-24 bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl md:text-4xl font-bold font-headline">
-            Por que escolher a PortoVale?
+            As maiores vantagens do <b>Consórcio Porto</b>
           </h2>
-          <p className="mt-4 text-lg text-primary-foreground/80 max-w-2xl mx-auto">
-            Descubra as vantagens que fazem do nosso consórcio a melhor opção para a sua conquista.
-          </p>
         </div>
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          {features.map((feature) => (
-            <Card key={feature.title} className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300 bg-card text-card-foreground">
-              <CardHeader>
-                <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary">
-                  <feature.icon className="h-8 w-8" />
-                </div>
-              </CardHeader>
-              <CardContent>
-                <CardTitle className="text-xl font-bold">{feature.title}</CardTitle>
-                <p className="mt-2 text-foreground/70">{feature.description}</p>
-              </CardContent>
-            </Card>
-          ))}
+          {features.map((feature) => {
+            const image = PlaceHolderImages.find((img) => img.id === feature.imageId);
+            return (
+              <Card key={feature.title} className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300 bg-card text-card-foreground">
+                <CardHeader>
+                  <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-primary/10 text-primary">
+                    {image && (
+                      <Image
+                        src={image.imageUrl}
+                        alt={feature.title}
+                        width={48}
+                        height={48}
+                        className="object-contain"
+                        data-ai-hint={image.imageHint}
+                      />
+                    )}
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <CardTitle className="text-xl font-bold">{feature.title}</CardTitle>
+                  <p className="mt-2 text-foreground/70">{feature.description}</p>
+                </CardContent>
+              </Card>
+            );
+          })}
         </div>
         <div className="mt-12 text-center">
-          <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-            QUERO SIMULAR
+          <Button onClick={scrollToForm} size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
+            Fazer uma simulação!
           </Button>
         </div>
       </div>
