@@ -7,10 +7,16 @@
       "imageHint": "logo brand"
     },
     {
+      "id": "logo-porto",
+      "description": "Porto logo",
+      "imageUrl": "https://picsum.photos/seed/portologo/200/50",
+      "imageHint": "insurance logo"
+    },
+    {
       "id": "hero-1",
       "description": "Family smiling in front of a new house",
       "imageUrl": "https://picsum.photos/seed/hero1/1920/800",
-      "imageHint": "happy family home"
+      "imageHint": "modern house"
     },
     {
       "id": "hero-2",

@@ -82,3 +82,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+input[type="range"]::-webkit-slider-thumb {
+  @apply bg-primary;
+}
+
+input[type="range"]::-moz-range-thumb {
+  @apply bg-primary;
+}
