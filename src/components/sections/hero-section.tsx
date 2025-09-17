@@ -21,7 +21,7 @@ export default function HeroSection() {
 
   return (
     <section className="bg-primary w-full relative overflow-hidden">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-between min-h-screen pt-24 lg:pt-0">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-between min-h-screen pt-20 lg:pt-0 pb-10 lg:pb-0">
         
         <div className="flex flex-col lg:flex-row items-center justify-between w-full lg:gap-8">
             {/* Content */}
