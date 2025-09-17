@@ -27,19 +27,19 @@ const features = [
 
 export default function WhyChooseUsSection() {
   return (
-    <section className="py-16 md:py-24 bg-card">
+    <section className="py-16 md:py-24 bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl md:text-4xl font-bold font-headline text-primary">
+          <h2 className="text-3xl md:text-4xl font-bold font-headline">
             Por que escolher a PortoVale?
           </h2>
-          <p className="mt-4 text-lg text-foreground/80 max-w-2xl mx-auto">
+          <p className="mt-4 text-lg text-primary-foreground/80 max-w-2xl mx-auto">
             Descubra as vantagens que fazem do nosso consórcio a melhor opção para a sua conquista.
           </p>
         </div>
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {features.map((feature) => (
-            <Card key={feature.title} className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <Card key={feature.title} className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300 bg-card text-card-foreground">
               <CardHeader>
                 <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary">
                   <feature.icon className="h-8 w-8" />
