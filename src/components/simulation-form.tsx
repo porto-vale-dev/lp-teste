@@ -159,12 +159,12 @@ export default function SimulationForm() {
             </h2>
             <p className="mt-4 text-muted-foreground">Escolha o valor desejado:</p>
 
-            <div className="grid grid-cols-2 gap-4 my-6 text-foreground">
-              <div className="flex flex-col items-center">
+            <div className="flex flex-col md:grid md:grid-cols-2 gap-4 my-6 text-foreground">
+              <div className="flex flex-col items-center pb-4 md:pb-0">
                 <span className="text-sm text-muted-foreground">Crédito:</span>
                 <span className="text-lg md:text-2xl font-bold">{formatCurrency(creditValue)}</span>
               </div>
-              <div className="flex flex-col items-center border-l">
+              <div className="flex flex-col items-center border-t md:border-t-0 md:border-l pt-4 md:pt-0">
                 <span className="text-sm text-muted-foreground">Parcela:</span>
                 <span className="text-lg md:text-2xl font-bold">{formatCurrency(installmentValue)}</span>
               </div>
@@ -182,7 +182,7 @@ export default function SimulationForm() {
               <span>{formatCurrency(CREDITO_MAX)}</span>
             </div>
 
-            <Button onClick={handleNextStep} size="lg" className="w-full mt-6 bg-accent text-accent-foreground hover:bg-accent/90 font-bold uppercase">
+            <Button onClick={handleNextStep} size="lg" className="w-full mt-6 bg-accent text-accent-foreground hover:bg-accent/90 font-bold uppercase rounded-full">
               Simular agora
             </Button>
           </div>
