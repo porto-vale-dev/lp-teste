@@ -19,96 +19,6 @@
       "imageHint": "modern house"
     },
     {
-      "id": "hero-2",
-      "description": "Person driving a new car",
-      "imageUrl": "https://picsum.photos/seed/hero2/1920/800",
-      "imageHint": "driving new car"
-    },
-    {
-      "id": "hero-3",
-      "description": "Couple celebrating a purchase",
-      "imageUrl": "https://picsum.photos/seed/hero3/1920/800",
-      "imageHint": "couple celebration"
-    },
-    {
-      "id": "dream-car",
-      "description": "A new red sports car",
-      "imageUrl": "https://picsum.photos/seed/dream1/400/400",
-      "imageHint": "red car"
-    },
-    {
-      "id": "dream-house",
-      "description": "A modern family house",
-      "imageUrl": "https://picsum.photos/seed/dream2/400/400",
-      "imageHint": "modern house"
-    },
-    {
-      "id": "dream-motorcycle",
-      "description": "A cruiser motorcycle on a scenic road",
-      "imageUrl": "https://picsum.photos/seed/dream3/400/400",
-      "imageHint": "motorcycle road"
-    },
-    {
-      "id": "dream-truck",
-      "description": "A heavy-duty pickup truck",
-      "imageUrl": "https://picsum.photos/seed/dream4/400/400",
-      "imageHint": "pickup truck"
-    },
-    {
-      "id": "dream-tractor",
-      "description": "A tractor in a field",
-      "imageUrl": "https://picsum.photos/seed/dream5/400/400",
-      "imageHint": "tractor field"
-    },
-    {
-      "id": "dream-investment",
-      "description": "A person looking at financial charts",
-      "imageUrl": "https://picsum.photos/seed/dream6/400/400",
-      "imageHint": "financial investment"
-    },
-    {
-      "id": "testimonial-1",
-      "description": "Avatar of a happy customer",
-      "imageUrl": "https://picsum.photos/seed/avatar1/80/80",
-      "imageHint": "person smiling"
-    },
-    {
-      "id": "testimonial-2",
-      "description": "Avatar of another happy customer",
-      "imageUrl": "https://picsum.photos/seed/avatar2/80/80",
-      "imageHint": "woman portrait"
-    },
-    {
-      "id": "testimonial-3",
-      "description": "Avatar of a third happy customer",
-      "imageUrl": "https://picsum.photos/seed/avatar3/80/80",
-      "imageHint": "man portrait"
-    },
-    {
-      "id": "blog-1",
-      "description": "Blog post image about financial planning",
-      "imageUrl": "https://picsum.photos/seed/blog1/400/250",
-      "imageHint": "financial planning"
-    },
-    {
-      "id": "blog-2",
-      "description": "Blog post image about buying a car",
-      "imageUrl": "https://picsum.photos/seed/blog2/400/250",
-      "imageHint": "car keys"
-    },
-    {
-      "id": "blog-3",
-      "description": "Blog post image about real estate",
-      "imageUrl": "https://picsum.photos/seed/blog3/400/250",
-      "imageHint": "house model"
-    },
-    {
-      "id": "footer-bg",
-      "description": "Abstract background for the footer call to action",
-      "imageUrl": "https://picsum.photos/seed/footerbg/1920/500",
-      "imageHint": "abstract texture"
-    },
-    {
       "id": "table-mobile",
       "description": "Tabela de valores do consórcio imobiliário Porto para mobile",
       "imageUrl": "https://storage.googleapis.com/consorcioportovale/imagens/Tabela_valores_flex_400px.webp",
@@ -197,6 +107,30 @@
       "description": "Depoimento de cliente 2",
       "imageUrl": "https://storage.googleapis.com/consorcioportovale/imagensSitePV/depoimento2.jpeg",
       "imageHint": "customer testimonial"
+    },
+    {
+      "id": "logo-porto-vale-footer",
+      "description": "Logo Porto Vale Consórcio",
+      "imageUrl": "https://storage.googleapis.com/consorcioportovale/imagens-lps-acelera/Logo%20Porto%20Vale%20-%20Varia%C3%A7%C3%B5es-4.webp",
+      "imageHint": "company logo"
+    },
+    {
+      "id": "logo-porto-bank",
+      "description": "Logo Porto Seguro Bank",
+      "imageUrl": "https://storage.googleapis.com/consorcioportovale/imagensSitePV/logo-portobank.png",
+      "imageHint": "bank logo"
+    },
+    {
+      "id": "logo-banco-central",
+      "description": "Logo do Banco Central do Brasil",
+      "imageUrl": "https://storage.googleapis.com/consorcioportovale/imagensSitePV/Banco_Central_do_Brasil_logo-1%201.png",
+      "imageHint": "government logo"
+    },
+    {
+      "id": "logo-abac",
+      "description": "Selo da ABAC - Associação Brasileira de Administradoras de Consórcios",
+      "imageUrl": "https://storage.googleapis.com/consorcioportovale/imagensSitePV/selo-abac%201.png",
+      "imageHint": "association seal"
     }
   ]
 }
