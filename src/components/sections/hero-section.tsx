@@ -3,6 +3,17 @@
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import SimulationForm from '@/components/simulation-form';
+import { Suspense } from 'react';
+import { Skeleton } from '../ui/skeleton';
+
+function SimulationFormWrapper() {
+  return (
+    <Suspense fallback={<Skeleton className="h-[450px] w-full max-w-md rounded-2xl" />}>
+      <SimulationForm />
+    </Suspense>
+  )
+}
+
 
 export default function HeroSection() {
   const logoPorto = PlaceHolderImages.find((img) => img.id === 'logo-porto');
@@ -31,7 +42,7 @@ export default function HeroSection() {
             </div>
 
             {/* Image */}
-            <div className="capa-carrossel w-full max-w-[80%] md:max-w-[55%] mx-auto mt-8 lg:mt-0 lg:w-1/3 order-2 lg:order-2">
+            <div className="w-full max-w-[80%] md:max-w-[55%] mx-auto mt-8 lg:mt-0 lg:w-1/3 order-2 lg:order-2 flex items-center justify-center">
             {heroImage && (
                 <div className="relative w-full aspect-[4/3]">
                     <Image
@@ -48,7 +59,7 @@ export default function HeroSection() {
             {/* Form */}
             <div className="w-full lg:w-1/3 flex justify-center lg:justify-end items-center mt-10 lg:mt-0 z-10 order-3 lg:order-3">
             <div className="w-full max-w-md">
-                <SimulationForm />
+                <SimulationFormWrapper />
             </div>
             </div>
         </div>
