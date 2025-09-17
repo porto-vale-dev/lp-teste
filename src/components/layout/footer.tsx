@@ -44,11 +44,11 @@ export default function Footer() {
         <div className="flex flex-col items-center gap-4">
           <div className="flex flex-col md:flex-row items-center gap-4">
             {portoValeLogo && (
-              <Image src={portoValeLogo.imageUrl} alt={portoValeLogo.description} width={200} height={50} className="h-auto" data-ai-hint={portoValeLogo.imageHint} />
+              <Image src={portoValeLogo.imageUrl} alt={portoValeLogo.description} width={150} height={38} className="h-auto" data-ai-hint={portoValeLogo.imageHint} />
             )}
             {portoBankLogo && (
               <a href="https://www.portoseguro.com.br/" target="_blank" rel="noopener noreferrer">
-                <Image src={portoBankLogo.imageUrl} alt={portoBankLogo.description} width={200} height={50} className="h-auto" data-ai-hint={portoBankLogo.imageHint} />
+                <Image src={portoBankLogo.imageUrl} alt={portoBankLogo.description} width={150} height={38} className="h-auto" data-ai-hint={portoBankLogo.imageHint} />
               </a>
             )}
           </div>
