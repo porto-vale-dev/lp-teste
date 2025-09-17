@@ -27,22 +27,7 @@ export default function HeroSection() {
           <h1 className="text-3xl md:text-5xl font-bold font-headline leading-tight">
             A melhor forma de comprar o seu Imóvel é com o Consórcio!
           </h1>
-           {heroImage && (
-            <div className="relative w-full aspect-[4/3] mt-8 lg:hidden rounded-lg overflow-hidden shadow-lg">
-                <Image
-                    src={heroImage.imageUrl}
-                    alt={heroImage.description}
-                    fill
-                    className="object-cover"
-                    data-ai-hint={heroImage.imageHint}
-                />
-            </div>
-          )}
-        </div>
-
-        {/* Form */}
-        <div className="w-full lg:w-1/2 flex justify-center items-center mt-10 lg:mt-0">
-           <div className="hidden lg:block lg:w-1/2 lg:pl-12">
+          <div className="w-full max-w-[80%] md:max-w-[90%] mx-auto mt-8 lg:hidden">
              {heroImage && (
                 <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden shadow-lg">
                     <Image
@@ -55,7 +40,24 @@ export default function HeroSection() {
                 </div>
               )}
            </div>
-           <div className="w-full lg:w-1/2">
+        </div>
+
+        {/* Form */}
+        <div className="w-full lg:w-1/2 flex justify-center items-center mt-10 lg:mt-0">
+           <div className="hidden lg:block w-full max-w-[90%] lg:pl-12">
+             {heroImage && (
+                <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden shadow-lg">
+                    <Image
+                        src={heroImage.imageUrl}
+                        alt={heroImage.description}
+                        fill
+                        className="object-cover"
+                        data-ai-hint={heroImage.imageHint}
+                    />
+                </div>
+              )}
+           </div>
+           <div className="w-full">
             <SimulationForm />
            </div>
         </div>
