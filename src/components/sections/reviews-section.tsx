@@ -25,7 +25,7 @@ export default function ReviewsSection() {
   };
 
   return (
-    <section className="my-8 md:my-12 py-16 md:py-24 bg-background">
+    <section className="my-4 md:my-6 py-8 md:py-12 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center text-[#685a5d]">
         
         {googleLogo && (
@@ -105,7 +105,7 @@ export default function ReviewsSection() {
         <Button
           onClick={scrollToForm}
           size="lg"
-          className="mt-16 bg-primary text-primary-foreground hover:bg-primary/90 w-full sm:w-auto uppercase font-bold"
+          className="mt-16 bg-primary text-primary-foreground hover:bg-primary/90 w-full sm:w-auto uppercase font-bold rounded-full max-w-md"
         >
           Fazer uma simulação!
         </Button>
