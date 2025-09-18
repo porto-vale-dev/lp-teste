@@ -36,7 +36,11 @@ const videoData = {
   ],
 };
 
-export default function FeedbacksSection() {
+interface FeedbacksSectionProps {
+  showButton?: boolean;
+}
+
+export default function FeedbacksSection({ showButton = true }: FeedbacksSectionProps) {
   const [activeVideo, setActiveVideo] = useState<VideoId | null>(null);
 
   const handlePlay = (videoId: VideoId) => {
@@ -96,13 +100,15 @@ export default function FeedbacksSection() {
             <p className="mt-4 text-lg text-foreground/80 max-w-2xl mx-auto md:mx-0">
               Conheça algumas histórias de nossos clientes que tiveram seus objetivos conquistados.
             </p>
-            <Button
-              onClick={scrollToForm}
-              size="lg"
-              className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90 hidden md:inline-flex w-full sm:w-auto rounded-full font-bold uppercase"
-            >
-              Fazer uma simulação!
-            </Button>
+            {showButton && (
+              <Button
+                onClick={scrollToForm}
+                size="lg"
+                className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90 hidden md:inline-flex w-full sm:w-auto rounded-full font-bold uppercase"
+              >
+                Fazer uma simulação!
+              </Button>
+            )}
           </div>
           <div className="md:w-1/2">
             <MainVideo
@@ -124,15 +130,17 @@ export default function FeedbacksSection() {
             />
           ))}
         </div>
-        <div className="mt-8 text-center md:hidden">
-           <Button
-              onClick={scrollToForm}
-              size="lg"
-              className="bg-accent text-accent-foreground hover:bg-accent/90 w-full rounded-full font-bold uppercase"
-            >
-              Fazer uma simulação!
-            </Button>
-        </div>
+        {showButton && (
+          <div className="mt-8 text-center md:hidden">
+            <Button
+                onClick={scrollToForm}
+                size="lg"
+                className="bg-accent text-accent-foreground hover:bg-accent/90 w-full rounded-full font-bold uppercase"
+              >
+                Fazer uma simulação!
+              </Button>
+          </div>
+        )}
       </div>
     </section>
   );
