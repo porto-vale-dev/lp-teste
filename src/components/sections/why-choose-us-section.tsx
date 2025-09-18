@@ -59,8 +59,8 @@ export default function WhyChooseUsSection() {
                       <Image
                         src={image.imageUrl}
                         alt={feature.title}
-                        width={64}
-                        height={64}
+                        width={50}
+                        height={50}
                         className="object-contain"
                         data-ai-hint={image.imageHint}
                       />
