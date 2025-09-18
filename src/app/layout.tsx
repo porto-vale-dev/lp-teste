@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'PortoVale Redux',
+  title: 'Consórcio de imóvel | Porto vale consórcio',
   description: 'Seu consórcio de forma simples e segura.',
 };
 
