@@ -99,7 +99,7 @@ export default function FeedbacksSection() {
             <Button
               onClick={scrollToForm}
               size="lg"
-              className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90 hidden md:inline-flex w-full sm:w-auto rounded-full"
+              className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90 hidden md:inline-flex w-full sm:w-auto rounded-full font-bold uppercase"
             >
               Fazer uma simulação!
             </Button>
@@ -128,7 +128,7 @@ export default function FeedbacksSection() {
            <Button
               onClick={scrollToForm}
               size="lg"
-              className="bg-accent text-accent-foreground hover:bg-accent/90 w-full rounded-full"
+              className="bg-accent text-accent-foreground hover:bg-accent/90 w-full rounded-full font-bold uppercase"
             >
               Fazer uma simulação!
             </Button>
