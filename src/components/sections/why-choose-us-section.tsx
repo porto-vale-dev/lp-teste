@@ -33,9 +33,11 @@ const features = [
 
 export default function WhyChooseUsSection() {
   const scrollToForm = () => {
-    const formElement = document.getElementById('simulation-form');
-    if (formElement) {
-      formElement.scrollIntoView({ behavior: 'smooth' });
+    if (typeof window !== 'undefined' && typeof document !== 'undefined') {
+      const formElement = document.getElementById('simulation-form');
+      if (formElement) {
+        formElement.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   };
   return (
@@ -52,13 +54,13 @@ export default function WhyChooseUsSection() {
             return (
               <Card key={feature.title} className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300 bg-card text-card-foreground">
                 <CardHeader>
-                  <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-primary/10 text-primary">
+                  <div className="mx-auto flex h-20 w-20 items-center justify-center">
                     {image && (
                       <Image
                         src={image.imageUrl}
                         alt={feature.title}
-                        width={48}
-                        height={48}
+                        width={64}
+                        height={64}
                         className="object-contain"
                         data-ai-hint={image.imageHint}
                       />
@@ -74,7 +76,7 @@ export default function WhyChooseUsSection() {
           })}
         </div>
         <div className="mt-12 text-center">
-          <Button onClick={scrollToForm} size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 w-full sm:w-auto font-bold uppercase">
+          <Button onClick={scrollToForm} size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 w-full sm:w-auto font-bold uppercase rounded-full">
             Fazer uma simulação!
           </Button>
         </div>
