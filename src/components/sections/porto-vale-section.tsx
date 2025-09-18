@@ -18,7 +18,7 @@ export default function PortoValeSection() {
   };
 
   return (
-    <section className="bg-secondary py-8 md:py-16">
+    <section className="bg-background py-8 md:py-16">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col-reverse md:flex-row md:items-center md:justify-between md:gap-10">
           
@@ -32,7 +32,7 @@ export default function PortoValeSection() {
               realidade.
             </p>
             <div className="mt-4 flex justify-center md:justify-start">
-                <Button onClick={scrollToForm} size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 w-full sm:w-auto font-bold uppercase">
+                <Button onClick={scrollToForm} size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 w-full sm:w-auto font-bold uppercase rounded-full">
                     Faça uma simulação com a Porto Vale
                     <ChevronRight className="h-5 w-5" />
                 </Button>
