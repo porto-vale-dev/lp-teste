@@ -8,8 +8,8 @@ export default function ObrigadoPage() {
     <div className="flex flex-col min-h-screen bg-background">
       <main className="flex-grow">
         <TableSection showButton={false} />
-        <FeedbacksSection showButton={false} />
-        <FaqSection />
+        <FeedbacksSection showButton={false} variant="inverse" />
+        <FaqSection variant="inverse" />
       </main>
       <Footer />
     </div>

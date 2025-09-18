@@ -6,6 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
+import { cn } from '@/lib/utils';
 
 const faqItems = [
   {
@@ -25,9 +26,16 @@ const faqItems = [
   },
 ];
 
-export default function FaqSection() {
+interface FaqSectionProps {
+  variant?: 'default' | 'inverse';
+}
+
+export default function FaqSection({ variant = 'default' }: FaqSectionProps) {
   return (
-    <section className="bg-white text-foreground py-16 md:py-24">
+    <section className={cn(
+      "text-foreground py-16 md:py-24",
+      variant === 'default' ? 'bg-background' : 'bg-white'
+    )}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         <div className="text-center">
           <h2 className="text-3xl md:text-5xl font-bold text-foreground">

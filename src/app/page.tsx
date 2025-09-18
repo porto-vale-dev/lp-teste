@@ -14,10 +14,10 @@ export default function Home() {
         <HeroSection />
         <TableSection />
         <WhyChooseUsSection />
-        <FeedbacksSection />
+        <FeedbacksSection variant="default" />
         <PortoValeSection />
         <ReviewsSection />
-        <FaqSection />
+        <FaqSection variant="default" />
       </main>
       <Footer />
     </div>

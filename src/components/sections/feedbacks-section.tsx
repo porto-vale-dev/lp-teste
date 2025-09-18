@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
+import { cn } from '@/lib/utils';
 
 type VideoId = 'main' | 'secondary1' | 'secondary2' | 'secondary3';
 
@@ -38,9 +39,10 @@ const videoData = {
 
 interface FeedbacksSectionProps {
   showButton?: boolean;
+  variant?: 'default' | 'inverse';
 }
 
-export default function FeedbacksSection({ showButton = true }: FeedbacksSectionProps) {
+export default function FeedbacksSection({ showButton = true, variant = 'default' }: FeedbacksSectionProps) {
   const [activeVideo, setActiveVideo] = useState<VideoId | null>(null);
 
   const handlePlay = (videoId: VideoId) => {
@@ -80,8 +82,6 @@ export default function FeedbacksSection({ showButton = true }: FeedbacksSection
                 data-ai-hint={imageHint}
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-              </div>
             </div>
           )
         )}
@@ -90,7 +90,10 @@ export default function FeedbacksSection({ showButton = true }: FeedbacksSection
   };
 
   return (
-    <section className="bg-background text-foreground py-16 md:py-24">
+    <section className={cn(
+      "text-foreground py-16 md:py-24",
+      variant === 'default' ? 'bg-white' : 'bg-background'
+    )}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="md:flex md:gap-12 md:items-center">
           <div className="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
