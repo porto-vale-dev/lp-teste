@@ -164,7 +164,7 @@ export default function SimulationForm() {
                 <span className="text-sm text-muted-foreground">Crédito:</span>
                 <span className="text-lg md:text-2xl font-bold">{formatCurrency(creditValue)}</span>
               </div>
-              <div className="flex flex-col items-center border-t md:border-t-0 md:border-l pt-4 md:pt-0">
+              <div className="flex flex-col items-center border-t md:border-t-0 md:border-l pt-4 md:pt-0 border-border">
                 <span className="text-sm text-muted-foreground">Parcela:</span>
                 <span className="text-lg md:text-2xl font-bold">{formatCurrency(installmentValue)}</span>
               </div>
@@ -234,9 +234,6 @@ export default function SimulationForm() {
                   </FormItem>
                 )}
               />
-              <p className="text-sm text-muted-foreground text-center">
-                Canal exclusivo para <span className="underline">consórcio de imóvel</span>.
-              </p>
 
               <div className="flex gap-4 pt-4">
                 <Button type="button" variant="outline" onClick={handlePrevStep} className="w-full" disabled={isLoading}>
