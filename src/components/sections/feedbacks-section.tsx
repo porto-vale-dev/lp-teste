@@ -90,7 +90,7 @@ export default function FeedbacksSection({ showButton = true }: FeedbacksSection
   };
 
   return (
-    <section className="bg-white text-foreground py-16 md:py-24">
+    <section className="bg-background text-foreground py-16 md:py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="md:flex md:gap-12 md:items-center">
           <div className="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
