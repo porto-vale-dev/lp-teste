@@ -125,14 +125,7 @@ export default function SimulationForm() {
                 title: "Sucesso!",
                 description: "Sua simulação foi enviada. Redirecionando...",
             });
-            // In a real scenario, you might redirect to a thank you page
-            // router.push('/obrigado');
-            setTimeout(() => {
-                form.reset();
-                setStep(1);
-                setCreditValue(300000);
-            }, 3000);
-
+            router.push('/obrigado');
         } else {
             throw new Error(result.message || 'Falha ao enviar a simulação.');
         }
@@ -250,3 +243,5 @@ export default function SimulationForm() {
     </Card>
   );
 }
+
+    
