@@ -1,3 +1,4 @@
+
 // IMPORTANT: THIS FILE IS USED TO SIMULATE A BACKEND, DO NOT DEPLOY.
 
 import {NextRequest, NextResponse} from 'next/server';
